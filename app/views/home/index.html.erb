@@ -12,7 +12,6 @@
   </ul>
   <button @click="addItem">add</button>
 </div>
-<!-- component template -->
 <script type="text/x-template" id="grid-template">
   <table>
     <thead>
@@ -46,6 +45,10 @@
   :columns="gridColumns"
   :filter-key="searchQuery">
   </demo-grid>
+</div>
+
+<div id="app-3">
+  <span v-if="seen">Now you see me</span>
 </div>
 <%= javascript_pack_tag 'hello_vue' %>
 
