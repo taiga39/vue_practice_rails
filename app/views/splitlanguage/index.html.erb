@@ -1,3 +1,14 @@
-<%- @language.each do |lang| %>
-<%= lang %>
-<%- end %>
+<div class="content1">
+  <%- @language.each do |lang| %>
+    <%= lang %>
+    <br>
+  <%- end %>
+</div>
+
+<div  class="seikai">
+  <%- if @language[1] == "ruby" %>
+    正解
+    <%- else %>
+    不正解
+  <%- end %>
+</div>
