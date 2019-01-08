@@ -1,3 +1,34 @@
-// Place all the styles related to the splitlanguage controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html,body{
+  margin:0;
+  width:100%;
+
+}
+#content1{
+  width:70%;
+  margin: 0 auto;
+  h4{
+    font-size:30px;
+  }
+  input{
+    width: 180px;
+    height: 1em;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #mondai1{
+    text-align: center;
+  }
+  #mondai2{
+    text-align: center;
+  }
+  #mondai3{
+    text-align: center;
+  }
+  #mondai4{
+    text-align: center;
+  }
+  #mondai5{
+    text-align: center;
+  }
+}

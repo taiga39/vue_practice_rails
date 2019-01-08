@@ -50,3 +50,15 @@ var app6 = new Vue({
     message: ''
   }
 })
+
+var example2 = new Vue({
+  el: '#example-2',
+  data: {
+    name: ""
+  },
+  methods: {
+    greet: function (event) {
+      this.name = "nanana"
+    }
+  }
+})

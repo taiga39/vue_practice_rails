@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>TodoSample</title>
+    <%= include_gon %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,7 +12,7 @@
 
   <body>
     <%= yield %>
-<%= javascript_pack_tag 'vuejs_study' %>
+    <%= javascript_pack_tag 'vuejs_study' %>
 
   </body>
 </html>
