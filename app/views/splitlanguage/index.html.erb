@@ -1,14 +1,14 @@
 <div class="content1">
-  <%- @language.each do |lang| %>
-    <%= lang %>
+  <%- lang = @language[1].split("") %>
+    <%- lang2 = lang.shuffle! %>
+    <%= lang2.join %>
     <br>
-  <%- end %>
 </div>
 
 <div  class="seikai">
   <%- if @language[1] == "ruby" %>
     正解
-    <%- else %>
+  <%- else %>
     不正解
   <%- end %>
 </div>
