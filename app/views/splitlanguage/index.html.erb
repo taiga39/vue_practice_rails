@@ -4,14 +4,15 @@
   </div>
 
     <%- @langquiz.each_with_index do |lang,index| %>
-      <div id="mondai<%= index+1 %>">
-        <h2><%= "問題#{index+1}" %>
+      <div id="mondai-content">
+        <h2><%= "問題#{index+1}" %></h2>
+        <h2 id="mondai<%= index+1 %>">
           <br>
           <%= lang %>
-        </h2>
         <form action="" id="form<%= index+1%>">
           <input id="textBox<%= index+1%>" type="text" value="" onkeyup="onButtonClick<%= index+1%>();"/>
         </form>
+        </h2>
     </div>
     <% end %>
 </div>
